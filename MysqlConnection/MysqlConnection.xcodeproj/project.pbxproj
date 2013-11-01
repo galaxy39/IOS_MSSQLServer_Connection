@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96073B68181AD0C500188F61 /* SQLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 96073B60181AD0C500188F61 /* SQLClient.m */; };
+		96073B69181AD0D700188F61 /* libfreetds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96073B5D181AD0C500188F61 /* libfreetds.a */; };
+		96073B6A181AD0F400188F61 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96073B56181A727700188F61 /* libiconv.dylib */; };
+		9636FABF181E32E000F2959F /* BuildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636FABE181E32E000F2959F /* BuildViewController.m */; };
+		9636FAC3181E3F5100F2959F /* CretoriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636FAC1181E3F5100F2959F /* CretoriaViewController.m */; };
+		9636FAC4181E3F5100F2959F /* CretoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9636FAC2181E3F5100F2959F /* CretoriaViewController.xib */; };
+		9636FAC8181E487600F2959F /* ShowResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636FAC6181E487600F2959F /* ShowResultViewController.m */; };
+		9636FAC9181E487600F2959F /* ShowResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9636FAC7181E487600F2959F /* ShowResultViewController.xib */; };
+		9636FACD181E4F3A00F2959F /* btn_min_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9636FACB181E4F3A00F2959F /* btn_min_normal.png */; };
+		9636FACE181E4F3A00F2959F /* btn_plus_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9636FACC181E4F3A00F2959F /* btn_plus_normal.png */; };
+		96482246180CEB7100DBA218 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482245180CEB7100DBA218 /* Foundation.framework */; };
+		96482248180CEB7100DBA218 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482247180CEB7100DBA218 /* CoreGraphics.framework */; };
+		9648224A180CEB7100DBA218 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482249180CEB7100DBA218 /* UIKit.framework */; };
+		96482250180CEB7100DBA218 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9648224E180CEB7100DBA218 /* InfoPlist.strings */; };
+		96482252180CEB7200DBA218 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96482251180CEB7200DBA218 /* main.m */; };
+		96482256180CEB7200DBA218 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96482255180CEB7200DBA218 /* AppDelegate.m */; };
+		96482259180CEB7200DBA218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96482257180CEB7200DBA218 /* Main.storyboard */; };
+		9648225C180CEB7200DBA218 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648225B180CEB7200DBA218 /* MainViewController.m */; };
+		9648225F180CEB7200DBA218 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648225E180CEB7200DBA218 /* FlipsideViewController.m */; };
+		96482261180CEB7200DBA218 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96482260180CEB7200DBA218 /* Images.xcassets */; };
+		96482268180CEB7200DBA218 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482267180CEB7200DBA218 /* XCTest.framework */; };
+		96482269180CEB7200DBA218 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482245180CEB7100DBA218 /* Foundation.framework */; };
+		9648226A180CEB7200DBA218 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96482249180CEB7100DBA218 /* UIKit.framework */; };
+		96482272180CEB7200DBA218 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96482270180CEB7200DBA218 /* InfoPlist.strings */; };
+		96482274180CEB7200DBA218 /* MysqlConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96482273180CEB7200DBA218 /* MysqlConnectionTests.m */; };
+		9648228B180D1A2B00DBA218 /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648228A180D1A2B00DBA218 /* BaseTableCell.m */; };
+		9648228D180D1A3600DBA218 /* BaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9648228C180D1A3600DBA218 /* BaseTableCell.xib */; };
+		96482291180D27A300DBA218 /* Obj_Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 96482290180D27A300DBA218 /* Obj_Database.m */; };
+		96482297180D343500DBA218 /* Con_SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96482295180D343500DBA218 /* Con_SettingController.m */; };
+		9648229C180D39DE00DBA218 /* BaseEditTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9648229A180D39DE00DBA218 /* BaseEditTableCell.m */; };
+		9648229D180D39DE00DBA218 /* BaseEditTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9648229B180D39DE00DBA218 /* BaseEditTableCell.xib */; };
+		964822AE180D417B00DBA218 /* DBConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822A0180D417A00DBA218 /* DBConnector.m */; };
+		964822AF180D417B00DBA218 /* DBInitailize.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822A2180D417A00DBA218 /* DBInitailize.m */; };
+		964822B0180D417B00DBA218 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822A4180D417A00DBA218 /* FMDatabase.m */; };
+		964822B1180D417B00DBA218 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822A6180D417A00DBA218 /* FMDatabaseAdditions.m */; };
+		964822B2180D417B00DBA218 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822A8180D417A00DBA218 /* FMResultSet.m */; };
+		964822B3180D417B00DBA218 /* MysqlConnect.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 964822A9180D417B00DBA218 /* MysqlConnect.sqlite */; };
+		964822B4180D417B00DBA218 /* SQLMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822AB180D417B00DBA218 /* SQLMgr.m */; };
+		964822B7180D423400DBA218 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 964822B6180D423400DBA218 /* libsqlite3.0.dylib */; };
+		964822BB180D76B800DBA218 /* CommonApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822BA180D76B800DBA218 /* CommonApi.m */; };
+		964822BF180D9A8C00DBA218 /* Con_TablesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822BE180D9A8C00DBA218 /* Con_TablesController.m */; };
+		964822C2180D9DF400DBA218 /* BaseTableNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822C1180D9DF400DBA218 /* BaseTableNameCell.m */; };
+		964822C4180D9E0100DBA218 /* BaseTableNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964822C3180D9E0100DBA218 /* BaseTableNameCell.xib */; };
+		964822C7180E33A100DBA218 /* Con_SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964822C6180E33A100DBA218 /* Con_SearchController.m */; };
+		96B9DC2718112CBD00E27ED0 /* MySqlServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9DC2618112CBD00E27ED0 /* MySqlServerConnection.m */; };
+		96B9DD04181276DD00E27ED0 /* BaseSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9DD03181276DD00E27ED0 /* BaseSearchCell.m */; };
+		96B9DD06181276EE00E27ED0 /* BaseSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B9DD05181276EE00E27ED0 /* BaseSearchCell.xib */; };
+		96B9DD0A1812811A00E27ED0 /* SearchResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B9DD081812811A00E27ED0 /* SearchResultController.m */; };
+		96B9DD0B1812811A00E27ED0 /* SearchResultController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B9DD091812811A00E27ED0 /* SearchResultController.xib */; };
+		96F550C518166247008E9F28 /* AdminTableConfController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F550C318166247008E9F28 /* AdminTableConfController.m */; };
+		96F550C618166247008E9F28 /* AdminTableConfController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F550C418166247008E9F28 /* AdminTableConfController.xib */; };
+		96F550C9181663DB008E9F28 /* AdminConfCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F550C8181663DB008E9F28 /* AdminConfCell.m */; };
+		96F550CB181663E3008E9F28 /* AdminConfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F550CA181663E3008E9F28 /* AdminConfCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9648226B180CEB7200DBA218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9648223A180CEB7100DBA218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96482241180CEB7100DBA218;
+			remoteInfo = MysqlConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96073B56181A727700188F61 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		96073B59181AD0C500188F61 /* bkpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bkpublic.h; sourceTree = "<group>"; };
+		96073B5A181AD0C500188F61 /* cspublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cspublic.h; sourceTree = "<group>"; };
+		96073B5B181AD0C500188F61 /* cstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cstypes.h; sourceTree = "<group>"; };
+		96073B5C181AD0C500188F61 /* ctpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctpublic.h; sourceTree = "<group>"; };
+		96073B5D181AD0C500188F61 /* libfreetds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetds.a; sourceTree = "<group>"; };
+		96073B5E181AD0C500188F61 /* odbcss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = odbcss.h; sourceTree = "<group>"; };
+		96073B5F181AD0C500188F61 /* SQLClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLClient.h; sourceTree = "<group>"; };
+		96073B60181AD0C500188F61 /* SQLClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLClient.m; sourceTree = "<group>"; };
+		96073B61181AD0C500188F61 /* sqldb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqldb.h; sourceTree = "<group>"; };
+		96073B62181AD0C500188F61 /* sqlfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlfront.h; sourceTree = "<group>"; };
+		96073B63181AD0C500188F61 /* sybdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybdb.h; sourceTree = "<group>"; };
+		96073B64181AD0C500188F61 /* syberror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syberror.h; sourceTree = "<group>"; };
+		96073B65181AD0C500188F61 /* sybfront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sybfront.h; sourceTree = "<group>"; };
+		96073B66181AD0C500188F61 /* tds_sysdep_public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tds_sysdep_public.h; sourceTree = "<group>"; };
+		9636FABD181E32E000F2959F /* BuildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildViewController.h; sourceTree = "<group>"; };
+		9636FABE181E32E000F2959F /* BuildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildViewController.m; sourceTree = "<group>"; };
+		9636FAC0181E3F5100F2959F /* CretoriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CretoriaViewController.h; sourceTree = "<group>"; };
+		9636FAC1181E3F5100F2959F /* CretoriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CretoriaViewController.m; sourceTree = "<group>"; };
+		9636FAC2181E3F5100F2959F /* CretoriaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CretoriaViewController.xib; sourceTree = "<group>"; };
+		9636FAC5181E487600F2959F /* ShowResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowResultViewController.h; sourceTree = "<group>"; };
+		9636FAC6181E487600F2959F /* ShowResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowResultViewController.m; sourceTree = "<group>"; };
+		9636FAC7181E487600F2959F /* ShowResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowResultViewController.xib; sourceTree = "<group>"; };
+		9636FACB181E4F3A00F2959F /* btn_min_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_min_normal.png; sourceTree = "<group>"; };
+		9636FACC181E4F3A00F2959F /* btn_plus_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_plus_normal.png; sourceTree = "<group>"; };
+		96482242180CEB7100DBA218 /* MysqlConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysqlConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96482245180CEB7100DBA218 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96482247180CEB7100DBA218 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96482249180CEB7100DBA218 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9648224D180CEB7100DBA218 /* MysqlConnection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MysqlConnection-Info.plist"; sourceTree = "<group>"; };
+		9648224F180CEB7100DBA218 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96482251180CEB7200DBA218 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96482253180CEB7200DBA218 /* MysqlConnection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MysqlConnection-Prefix.pch"; sourceTree = "<group>"; };
+		96482254180CEB7200DBA218 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96482255180CEB7200DBA218 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96482258180CEB7200DBA218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9648225A180CEB7200DBA218 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9648225B180CEB7200DBA218 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9648225D180CEB7200DBA218 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		9648225E180CEB7200DBA218 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		96482260180CEB7200DBA218 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96482266180CEB7200DBA218 /* MysqlConnectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MysqlConnectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96482267180CEB7200DBA218 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9648226F180CEB7200DBA218 /* MysqlConnectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MysqlConnectionTests-Info.plist"; sourceTree = "<group>"; };
+		96482271180CEB7200DBA218 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96482273180CEB7200DBA218 /* MysqlConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MysqlConnectionTests.m; sourceTree = "<group>"; };
+		96482289180D1A2B00DBA218 /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
+		9648228A180D1A2B00DBA218 /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
+		9648228C180D1A3600DBA218 /* BaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableCell.xib; sourceTree = "<group>"; };
+		9648228F180D27A300DBA218 /* Obj_Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj_Database.h; sourceTree = "<group>"; };
+		96482290180D27A300DBA218 /* Obj_Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj_Database.m; sourceTree = "<group>"; };
+		96482294180D343500DBA218 /* Con_SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Con_SettingController.h; sourceTree = "<group>"; };
+		96482295180D343500DBA218 /* Con_SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Con_SettingController.m; sourceTree = "<group>"; };
+		96482299180D39DE00DBA218 /* BaseEditTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEditTableCell.h; sourceTree = "<group>"; };
+		9648229A180D39DE00DBA218 /* BaseEditTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEditTableCell.m; sourceTree = "<group>"; };
+		9648229B180D39DE00DBA218 /* BaseEditTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseEditTableCell.xib; sourceTree = "<group>"; };
+		9648229F180D417A00DBA218 /* DBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnector.h; sourceTree = "<group>"; };
+		964822A0180D417A00DBA218 /* DBConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBConnector.m; sourceTree = "<group>"; };
+		964822A1180D417A00DBA218 /* DBInitailize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBInitailize.h; sourceTree = "<group>"; };
+		964822A2180D417A00DBA218 /* DBInitailize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBInitailize.m; sourceTree = "<group>"; };
+		964822A3180D417A00DBA218 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		964822A4180D417A00DBA218 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		964822A5180D417A00DBA218 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		964822A6180D417A00DBA218 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		964822A7180D417A00DBA218 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		964822A8180D417A00DBA218 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		964822A9180D417B00DBA218 /* MysqlConnect.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MysqlConnect.sqlite; sourceTree = "<group>"; };
+		964822AA180D417B00DBA218 /* SQLMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLMgr.h; sourceTree = "<group>"; };
+		964822AB180D417B00DBA218 /* SQLMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLMgr.m; sourceTree = "<group>"; };
+		964822B6180D423400DBA218 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		964822B9180D76B800DBA218 /* CommonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonApi.h; sourceTree = "<group>"; };
+		964822BA180D76B800DBA218 /* CommonApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonApi.m; sourceTree = "<group>"; };
+		964822BD180D9A8C00DBA218 /* Con_TablesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Con_TablesController.h; sourceTree = "<group>"; };
+		964822BE180D9A8C00DBA218 /* Con_TablesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Con_TablesController.m; sourceTree = "<group>"; };
+		964822C0180D9DF400DBA218 /* BaseTableNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableNameCell.h; sourceTree = "<group>"; };
+		964822C1180D9DF400DBA218 /* BaseTableNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableNameCell.m; sourceTree = "<group>"; };
+		964822C3180D9E0100DBA218 /* BaseTableNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableNameCell.xib; sourceTree = "<group>"; };
+		964822C5180E33A100DBA218 /* Con_SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Con_SearchController.h; sourceTree = "<group>"; };
+		964822C6180E33A100DBA218 /* Con_SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Con_SearchController.m; sourceTree = "<group>"; };
+		96B092F01819AF0F0082CAEC /* libiodbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiodbc.a; path = mssql/libiodbc.a; sourceTree = "<group>"; };
+		96B092F21819B5800082CAEC /* libodbc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libodbc.a; path = mssql/libodbc.a; sourceTree = "<group>"; };
+		96B9DC2518112CBD00E27ED0 /* MySqlServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySqlServerConnection.h; sourceTree = "<group>"; };
+		96B9DC2618112CBD00E27ED0 /* MySqlServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySqlServerConnection.m; sourceTree = "<group>"; };
+		96B9DCFE1811A3B300E27ED0 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		96B9DD001811A3C800E27ED0 /* libsystem_pthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystem_pthread.dylib; path = usr/lib/system/libsystem_pthread.dylib; sourceTree = SDKROOT; };
+		96B9DD02181276DD00E27ED0 /* BaseSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSearchCell.h; sourceTree = "<group>"; };
+		96B9DD03181276DD00E27ED0 /* BaseSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSearchCell.m; sourceTree = "<group>"; };
+		96B9DD05181276EE00E27ED0 /* BaseSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseSearchCell.xib; sourceTree = "<group>"; };
+		96B9DD071812811A00E27ED0 /* SearchResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultController.h; sourceTree = "<group>"; };
+		96B9DD081812811A00E27ED0 /* SearchResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultController.m; sourceTree = "<group>"; };
+		96B9DD091812811A00E27ED0 /* SearchResultController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultController.xib; sourceTree = "<group>"; };
+		96BEE05D1819999B0043B353 /* libiodbc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiodbc.dylib; path = mssql/libiodbc.dylib; sourceTree = "<group>"; };
+		96F550C218166247008E9F28 /* AdminTableConfController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminTableConfController.h; sourceTree = "<group>"; };
+		96F550C318166247008E9F28 /* AdminTableConfController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTableConfController.m; sourceTree = "<group>"; };
+		96F550C418166247008E9F28 /* AdminTableConfController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminTableConfController.xib; sourceTree = "<group>"; };
+		96F550C7181663DB008E9F28 /* AdminConfCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminConfCell.h; sourceTree = "<group>"; };
+		96F550C8181663DB008E9F28 /* AdminConfCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminConfCell.m; sourceTree = "<group>"; };
+		96F550CA181663E3008E9F28 /* AdminConfCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdminConfCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9648223F180CEB7100DBA218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96073B6A181AD0F400188F61 /* libiconv.dylib in Frameworks */,
+				96073B69181AD0D700188F61 /* libfreetds.a in Frameworks */,
+				964822B7180D423400DBA218 /* libsqlite3.0.dylib in Frameworks */,
+				96482248180CEB7100DBA218 /* CoreGraphics.framework in Frameworks */,
+				9648224A180CEB7100DBA218 /* UIKit.framework in Frameworks */,
+				96482246180CEB7100DBA218 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96482263180CEB7200DBA218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96482268180CEB7200DBA218 /* XCTest.framework in Frameworks */,
+				9648226A180CEB7200DBA218 /* UIKit.framework in Frameworks */,
+				96482269180CEB7200DBA218 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96073B3B181A50B900188F61 /* mssql */ = {
+			isa = PBXGroup;
+			children = (
+				96073B58181AD0C500188F61 /* SQLClient */,
+			);
+			path = mssql;
+			sourceTree = SOURCE_ROOT;
+		};
+		96073B58181AD0C500188F61 /* SQLClient */ = {
+			isa = PBXGroup;
+			children = (
+				96073B59181AD0C500188F61 /* bkpublic.h */,
+				96073B5A181AD0C500188F61 /* cspublic.h */,
+				96073B5B181AD0C500188F61 /* cstypes.h */,
+				96073B5C181AD0C500188F61 /* ctpublic.h */,
+				96073B5D181AD0C500188F61 /* libfreetds.a */,
+				96073B5E181AD0C500188F61 /* odbcss.h */,
+				96073B5F181AD0C500188F61 /* SQLClient.h */,
+				96073B60181AD0C500188F61 /* SQLClient.m */,
+				96073B61181AD0C500188F61 /* sqldb.h */,
+				96073B62181AD0C500188F61 /* sqlfront.h */,
+				96073B63181AD0C500188F61 /* sybdb.h */,
+				96073B64181AD0C500188F61 /* syberror.h */,
+				96073B65181AD0C500188F61 /* sybfront.h */,
+				96073B66181AD0C500188F61 /* tds_sysdep_public.h */,
+			);
+			path = SQLClient;
+			sourceTree = "<group>";
+		};
+		9636FABC181E32C900F2959F /* NewUI */ = {
+			isa = PBXGroup;
+			children = (
+				9636FABD181E32E000F2959F /* BuildViewController.h */,
+				9636FABE181E32E000F2959F /* BuildViewController.m */,
+				9636FAC0181E3F5100F2959F /* CretoriaViewController.h */,
+				9636FAC1181E3F5100F2959F /* CretoriaViewController.m */,
+				9636FAC2181E3F5100F2959F /* CretoriaViewController.xib */,
+				9636FAC5181E487600F2959F /* ShowResultViewController.h */,
+				9636FAC6181E487600F2959F /* ShowResultViewController.m */,
+				9636FAC7181E487600F2959F /* ShowResultViewController.xib */,
+			);
+			path = NewUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		9636FACA181E4F3A00F2959F /* png */ = {
+			isa = PBXGroup;
+			children = (
+				9636FACB181E4F3A00F2959F /* btn_min_normal.png */,
+				9636FACC181E4F3A00F2959F /* btn_plus_normal.png */,
+			);
+			path = png;
+			sourceTree = SOURCE_ROOT;
+		};
+		96482239180CEB7100DBA218 = {
+			isa = PBXGroup;
+			children = (
+				9648228E180D278E00DBA218 /* API&Data */,
+				9648227D180CED1100DBA218 /* MainUI */,
+				9648224B180CEB7100DBA218 /* MysqlConnection */,
+				9648226D180CEB7200DBA218 /* MysqlConnectionTests */,
+				96482244180CEB7100DBA218 /* Frameworks */,
+				96482243180CEB7100DBA218 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96482243180CEB7100DBA218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96482242180CEB7100DBA218 /* MysqlConnection.app */,
+				96482266180CEB7200DBA218 /* MysqlConnectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96482244180CEB7100DBA218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96073B56181A727700188F61 /* libiconv.dylib */,
+				96B092F21819B5800082CAEC /* libodbc.a */,
+				96B092F01819AF0F0082CAEC /* libiodbc.a */,
+				96BEE05D1819999B0043B353 /* libiodbc.dylib */,
+				96B9DD001811A3C800E27ED0 /* libsystem_pthread.dylib */,
+				96B9DCFE1811A3B300E27ED0 /* libpthread.dylib */,
+				964822B6180D423400DBA218 /* libsqlite3.0.dylib */,
+				96482245180CEB7100DBA218 /* Foundation.framework */,
+				96482247180CEB7100DBA218 /* CoreGraphics.framework */,
+				96482249180CEB7100DBA218 /* UIKit.framework */,
+				96482267180CEB7200DBA218 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9648224B180CEB7100DBA218 /* MysqlConnection */ = {
+			isa = PBXGroup;
+			children = (
+				96482254180CEB7200DBA218 /* AppDelegate.h */,
+				96482255180CEB7200DBA218 /* AppDelegate.m */,
+				96482257180CEB7200DBA218 /* Main.storyboard */,
+				9648225A180CEB7200DBA218 /* MainViewController.h */,
+				9648225B180CEB7200DBA218 /* MainViewController.m */,
+				9648225D180CEB7200DBA218 /* FlipsideViewController.h */,
+				9648225E180CEB7200DBA218 /* FlipsideViewController.m */,
+				96482260180CEB7200DBA218 /* Images.xcassets */,
+				9648224C180CEB7100DBA218 /* Supporting Files */,
+			);
+			path = MysqlConnection;
+			sourceTree = "<group>";
+		};
+		9648224C180CEB7100DBA218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9648224D180CEB7100DBA218 /* MysqlConnection-Info.plist */,
+				9648224E180CEB7100DBA218 /* InfoPlist.strings */,
+				96482251180CEB7200DBA218 /* main.m */,
+				96482253180CEB7200DBA218 /* MysqlConnection-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9648226D180CEB7200DBA218 /* MysqlConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				96482273180CEB7200DBA218 /* MysqlConnectionTests.m */,
+				9648226E180CEB7200DBA218 /* Supporting Files */,
+			);
+			path = MysqlConnectionTests;
+			sourceTree = "<group>";
+		};
+		9648226E180CEB7200DBA218 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9648226F180CEB7200DBA218 /* MysqlConnectionTests-Info.plist */,
+				96482270180CEB7200DBA218 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9648227D180CED1100DBA218 /* MainUI */ = {
+			isa = PBXGroup;
+			children = (
+				9636FABC181E32C900F2959F /* NewUI */,
+				964822BC180D9A7200DBA218 /* DatabaseTables */,
+				96482299180D39DE00DBA218 /* BaseEditTableCell.h */,
+				9648229A180D39DE00DBA218 /* BaseEditTableCell.m */,
+				9648229B180D39DE00DBA218 /* BaseEditTableCell.xib */,
+				96482283180CEE3500DBA218 /* ConnectionSetting */,
+				96482289180D1A2B00DBA218 /* BaseTableCell.h */,
+				9648228A180D1A2B00DBA218 /* BaseTableCell.m */,
+				9648228C180D1A3600DBA218 /* BaseTableCell.xib */,
+				964822C0180D9DF400DBA218 /* BaseTableNameCell.h */,
+				964822C1180D9DF400DBA218 /* BaseTableNameCell.m */,
+				964822C3180D9E0100DBA218 /* BaseTableNameCell.xib */,
+			);
+			path = MainUI;
+			sourceTree = "<group>";
+		};
+		96482283180CEE3500DBA218 /* ConnectionSetting */ = {
+			isa = PBXGroup;
+			children = (
+				96482294180D343500DBA218 /* Con_SettingController.h */,
+				96482295180D343500DBA218 /* Con_SettingController.m */,
+			);
+			path = ConnectionSetting;
+			sourceTree = "<group>";
+		};
+		9648228E180D278E00DBA218 /* API&Data */ = {
+			isa = PBXGroup;
+			children = (
+				9636FACA181E4F3A00F2959F /* png */,
+				96073B3B181A50B900188F61 /* mssql */,
+				964822B8180D769F00DBA218 /* Common */,
+				9648229E180D417A00DBA218 /* SqlMgr */,
+				9648228F180D27A300DBA218 /* Obj_Database.h */,
+				96482290180D27A300DBA218 /* Obj_Database.m */,
+			);
+			path = "API&Data";
+			sourceTree = "<group>";
+		};
+		9648229E180D417A00DBA218 /* SqlMgr */ = {
+			isa = PBXGroup;
+			children = (
+				9648229F180D417A00DBA218 /* DBConnector.h */,
+				964822A0180D417A00DBA218 /* DBConnector.m */,
+				964822A1180D417A00DBA218 /* DBInitailize.h */,
+				964822A2180D417A00DBA218 /* DBInitailize.m */,
+				964822A3180D417A00DBA218 /* FMDatabase.h */,
+				964822A4180D417A00DBA218 /* FMDatabase.m */,
+				964822A5180D417A00DBA218 /* FMDatabaseAdditions.h */,
+				964822A6180D417A00DBA218 /* FMDatabaseAdditions.m */,
+				964822A7180D417A00DBA218 /* FMResultSet.h */,
+				964822A8180D417A00DBA218 /* FMResultSet.m */,
+				964822A9180D417B00DBA218 /* MysqlConnect.sqlite */,
+				964822AA180D417B00DBA218 /* SQLMgr.h */,
+				964822AB180D417B00DBA218 /* SQLMgr.m */,
+			);
+			path = SqlMgr;
+			sourceTree = SOURCE_ROOT;
+		};
+		964822B8180D769F00DBA218 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				964822B9180D76B800DBA218 /* CommonApi.h */,
+				964822BA180D76B800DBA218 /* CommonApi.m */,
+				96B9DC2518112CBD00E27ED0 /* MySqlServerConnection.h */,
+				96B9DC2618112CBD00E27ED0 /* MySqlServerConnection.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		964822BC180D9A7200DBA218 /* DatabaseTables */ = {
+			isa = PBXGroup;
+			children = (
+				964822BD180D9A8C00DBA218 /* Con_TablesController.h */,
+				964822BE180D9A8C00DBA218 /* Con_TablesController.m */,
+				964822C5180E33A100DBA218 /* Con_SearchController.h */,
+				964822C6180E33A100DBA218 /* Con_SearchController.m */,
+				96B9DD02181276DD00E27ED0 /* BaseSearchCell.h */,
+				96B9DD03181276DD00E27ED0 /* BaseSearchCell.m */,
+				96B9DD05181276EE00E27ED0 /* BaseSearchCell.xib */,
+				96B9DD071812811A00E27ED0 /* SearchResultController.h */,
+				96B9DD081812811A00E27ED0 /* SearchResultController.m */,
+				96B9DD091812811A00E27ED0 /* SearchResultController.xib */,
+				96F550C218166247008E9F28 /* AdminTableConfController.h */,
+				96F550C318166247008E9F28 /* AdminTableConfController.m */,
+				96F550C418166247008E9F28 /* AdminTableConfController.xib */,
+				96F550C7181663DB008E9F28 /* AdminConfCell.h */,
+				96F550C8181663DB008E9F28 /* AdminConfCell.m */,
+				96F550CA181663E3008E9F28 /* AdminConfCell.xib */,
+			);
+			path = DatabaseTables;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96482241180CEB7100DBA218 /* MysqlConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96482277180CEB7200DBA218 /* Build configuration list for PBXNativeTarget "MysqlConnection" */;
+			buildPhases = (
+				9648223E180CEB7100DBA218 /* Sources */,
+				9648223F180CEB7100DBA218 /* Frameworks */,
+				96482240180CEB7100DBA218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MysqlConnection;
+			productName = MysqlConnection;
+			productReference = 96482242180CEB7100DBA218 /* MysqlConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96482265180CEB7200DBA218 /* MysqlConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9648227A180CEB7200DBA218 /* Build configuration list for PBXNativeTarget "MysqlConnectionTests" */;
+			buildPhases = (
+				96482262180CEB7200DBA218 /* Sources */,
+				96482263180CEB7200DBA218 /* Frameworks */,
+				96482264180CEB7200DBA218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9648226C180CEB7200DBA218 /* PBXTargetDependency */,
+			);
+			name = MysqlConnectionTests;
+			productName = MysqlConnectionTests;
+			productReference = 96482266180CEB7200DBA218 /* MysqlConnectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9648223A180CEB7100DBA218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = oDesk;
+				TargetAttributes = {
+					96482241180CEB7100DBA218 = {
+						DevelopmentTeam = D4J7AW2S69;
+					};
+					96482265180CEB7200DBA218 = {
+						TestTargetID = 96482241180CEB7100DBA218;
+					};
+				};
+			};
+			buildConfigurationList = 9648223D180CEB7100DBA218 /* Build configuration list for PBXProject "MysqlConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96482239180CEB7100DBA218;
+			productRefGroup = 96482243180CEB7100DBA218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96482241180CEB7100DBA218 /* MysqlConnection */,
+				96482265180CEB7200DBA218 /* MysqlConnectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96482240180CEB7100DBA218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B9DD0B1812811A00E27ED0 /* SearchResultController.xib in Resources */,
+				9648229D180D39DE00DBA218 /* BaseEditTableCell.xib in Resources */,
+				964822C4180D9E0100DBA218 /* BaseTableNameCell.xib in Resources */,
+				96482261180CEB7200DBA218 /* Images.xcassets in Resources */,
+				9636FACE181E4F3A00F2959F /* btn_plus_normal.png in Resources */,
+				96B9DD06181276EE00E27ED0 /* BaseSearchCell.xib in Resources */,
+				96F550CB181663E3008E9F28 /* AdminConfCell.xib in Resources */,
+				9648228D180D1A3600DBA218 /* BaseTableCell.xib in Resources */,
+				9636FAC4181E3F5100F2959F /* CretoriaViewController.xib in Resources */,
+				964822B3180D417B00DBA218 /* MysqlConnect.sqlite in Resources */,
+				96482250180CEB7100DBA218 /* InfoPlist.strings in Resources */,
+				9636FAC9181E487600F2959F /* ShowResultViewController.xib in Resources */,
+				96F550C618166247008E9F28 /* AdminTableConfController.xib in Resources */,
+				9636FACD181E4F3A00F2959F /* btn_min_normal.png in Resources */,
+				96482259180CEB7200DBA218 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96482264180CEB7200DBA218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96482272180CEB7200DBA218 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9648223E180CEB7100DBA218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964822BB180D76B800DBA218 /* CommonApi.m in Sources */,
+				9636FAC8181E487600F2959F /* ShowResultViewController.m in Sources */,
+				96482256180CEB7200DBA218 /* AppDelegate.m in Sources */,
+				964822AF180D417B00DBA218 /* DBInitailize.m in Sources */,
+				9636FABF181E32E000F2959F /* BuildViewController.m in Sources */,
+				96482291180D27A300DBA218 /* Obj_Database.m in Sources */,
+				96F550C9181663DB008E9F28 /* AdminConfCell.m in Sources */,
+				96073B68181AD0C500188F61 /* SQLClient.m in Sources */,
+				964822C7180E33A100DBA218 /* Con_SearchController.m in Sources */,
+				964822AE180D417B00DBA218 /* DBConnector.m in Sources */,
+				9648225C180CEB7200DBA218 /* MainViewController.m in Sources */,
+				964822B4180D417B00DBA218 /* SQLMgr.m in Sources */,
+				9636FAC3181E3F5100F2959F /* CretoriaViewController.m in Sources */,
+				9648225F180CEB7200DBA218 /* FlipsideViewController.m in Sources */,
+				96F550C518166247008E9F28 /* AdminTableConfController.m in Sources */,
+				964822C2180D9DF400DBA218 /* BaseTableNameCell.m in Sources */,
+				964822B2180D417B00DBA218 /* FMResultSet.m in Sources */,
+				96482297180D343500DBA218 /* Con_SettingController.m in Sources */,
+				9648228B180D1A2B00DBA218 /* BaseTableCell.m in Sources */,
+				96482252180CEB7200DBA218 /* main.m in Sources */,
+				96B9DC2718112CBD00E27ED0 /* MySqlServerConnection.m in Sources */,
+				964822B0180D417B00DBA218 /* FMDatabase.m in Sources */,
+				9648229C180D39DE00DBA218 /* BaseEditTableCell.m in Sources */,
+				964822B1180D417B00DBA218 /* FMDatabaseAdditions.m in Sources */,
+				96B9DD04181276DD00E27ED0 /* BaseSearchCell.m in Sources */,
+				96B9DD0A1812811A00E27ED0 /* SearchResultController.m in Sources */,
+				964822BF180D9A8C00DBA218 /* Con_TablesController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96482262180CEB7200DBA218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96482274180CEB7200DBA218 /* MysqlConnectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9648226C180CEB7200DBA218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96482241180CEB7100DBA218 /* MysqlConnection */;
+			targetProxy = 9648226B180CEB7200DBA218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9648224E180CEB7100DBA218 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9648224F180CEB7100DBA218 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96482257180CEB7200DBA218 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96482258180CEB7200DBA218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96482270180CEB7200DBA218 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96482271180CEB7200DBA218 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96482275180CEB7200DBA218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		96482276180CEB7200DBA218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+		96482278180CEB7200DBA218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MysqlConnection/MysqlConnection-Prefix.pch";
+				INFOPLIST_FILE = "MysqlConnection/MysqlConnection-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yonghe/Desktop/MysqlConnection/MysqlConnectionLib/lib,
+					"$(SDKROOT)/usr/lib/system",
+					/Users/yonghe/Desktop/MysqlConnection/mssql,
+					/Users/yonghe/Desktop/MysqlConnection/mssql/SQLClient,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96482279180CEB7200DBA218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: JinLing Zhang";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MysqlConnection/MysqlConnection-Prefix.pch";
+				INFOPLIST_FILE = "MysqlConnection/MysqlConnection-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yonghe/Desktop/MysqlConnection/MysqlConnectionLib/lib,
+					"$(SDKROOT)/usr/lib/system",
+					/Users/yonghe/Desktop/MysqlConnection/mssql,
+					/Users/yonghe/Desktop/MysqlConnection/mssql/SQLClient,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9648227B180CEB7200DBA218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MysqlConnection.app/MysqlConnection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MysqlConnection/MysqlConnection-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MysqlConnectionTests/MysqlConnectionTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9648227C180CEB7200DBA218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MysqlConnection.app/MysqlConnection";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MysqlConnection/MysqlConnection-Prefix.pch";
+				INFOPLIST_FILE = "MysqlConnectionTests/MysqlConnectionTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9648223D180CEB7100DBA218 /* Build configuration list for PBXProject "MysqlConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96482275180CEB7200DBA218 /* Debug */,
+				96482276180CEB7200DBA218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96482277180CEB7200DBA218 /* Build configuration list for PBXNativeTarget "MysqlConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96482278180CEB7200DBA218 /* Debug */,
+				96482279180CEB7200DBA218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9648227A180CEB7200DBA218 /* Build configuration list for PBXNativeTarget "MysqlConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9648227B180CEB7200DBA218 /* Debug */,
+				9648227C180CEB7200DBA218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9648223A180CEB7100DBA218 /* Project object */;
+}
